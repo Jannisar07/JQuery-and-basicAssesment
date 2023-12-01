@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavascriptAssessment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: black;
+
+        }
+        .header{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .logo{
+            width: 60px;
+            height: 60px;
+            margin-left: 40px;
+            
+        }
+        .logo img{
+            width: 100%;
+            height: inherit;
+            border-radius: 100%;
+        }
+        .anchors{
+        
+        }
+        .anchors a{
+            padding-right: 25px;
+            text-decoration-line: none;
+            color: black;
+        }
+        .main{
+            margin-top: 10px;
+            width: 100%;
+            height: 650px;
+            background-color: grey;
+        }
+        .btn{
+            display: none;
+        }
+        .box{
+            
+            display: flex;
+            flex-direction: column;
+            margin-top: 3%;
+            
+            text-align: right;
+            padding-right: 3%;
+
+        }
+        .box a{
+            padding-bottom: 20px;
+        }
+        #bx{
+            display: none;
+            text-align: left;
+            padding-left: 30px;
+        }
+       
+
+        /* media query */
+
+        @media screen and (max-width:800px){
+            .btn {
+                display: block;
+                font-size: 30px;
+                margin-right: 50px;
+            }
+            .anchors{
+                display: none;
+            }
+            .box1{
+            display: flex ; 
+            flex-direction: column;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+
+        <div class="logo"> <img src="https://img.freepik.com/premium-photo/closeup-photo-face-portrait-serious-young-male-lawyer-notary-public-standing-office_321831-17688.jpg?w=996" alt="">
+        </div> <!-- logo div ends here -->
+
+        <div class="anchors">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">PROJECTS</a>
+            <a href="">CONTACT</a>
+
+        </div> <!-- btn div ends here -->
+
+        <div class="btn" id="bt"> <i class="fa-solid fa-bars" onclick="myFunction()"></i> </div>
+    </div> <!-- header div ends here -->
+    <div class="box box1" id="bx"> 
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">PROJECTS</a>
+        <a href="">CONTACT</a>   
+    </div> <!-- box div ends here -->
+
+
+    <div class="main"></div> <!-- main div ends here -->   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scriptForAssessment.js"></script>
+    
+
+</body>
+</html>
